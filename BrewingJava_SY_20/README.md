@@ -1,5 +1,12 @@
-FEEDBACK REPORT 1:
-https://docs.google.com/document/d/19arBtMTjixGX95pYZZfO3hhgYFEJaLvc/edit
+Team Name : BrewingJAVA
 
-FEEDBACK REPORT 2:
-https://docs.google.com/document/d/1fKudJC_kEvg_-HSslcU4cCAUwgnAoWqW/edit
+Team members:
+1.Rucha Gosavi (SY COMP)
+2.Piyusha Ghodake (SY COMP)
+3.Ketaki Deshwandikar (SY IT)
+4.Pranoti Patil (SY COMP)
+
+Theme name : Open Innovation
+
+PROJECT NAME: TOURS AND TRAVELS MANAGEMENT SYSTEM
+
