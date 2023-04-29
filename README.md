@@ -25,13 +25,17 @@ Data Structures :
                   
 Algorithms :    Singly LinkedList algorithm
 
+Description :
+             In the above project, PetCareCorner is a Main class which contains all 5 classes like (Login , VetClinic , Daycare , salon , Petshop).
+             
+
 Contribution : 
               We have equally divided modules of all functionalities among all the team members , so everyone has contributed equally.
               
               
   The Pet Care Corner is a simple, yet effective application for pet owners to access various services for their furry friends. 
   It provides a user-friendly interface and can be easily expanded to include more services and functionalities.
-  
+
   ThankYou !
 
           
