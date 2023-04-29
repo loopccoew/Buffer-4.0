@@ -16,7 +16,7 @@ Lisa Susheel(UCE2021439)(SY Comp)</b><br>
 A contact tracing system which maintains a record of the people you have come into physical contact with. Each person represents a node in the graph. The Edges of the graph shows the relationship between the contatcs. It categorizes zones into red, yellow or green based on the number of postive patients in a particular pincode. <br><br>
 
 <b>Drive Link to reports:</b> https://drive.google.com/drive/folders/1PsBnx2qPT49jtdomOmn9jeuzhYxog5o_?usp=sharing<br>
-<b>Canva Link to PPT: https://www.canva.com/design/DAFhdzPKwjc/4oW5i3TNZEMi0OAJmr6LHQ/edit?utm_content=DAFhdzPKwjc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</b><br>
+<b>Canva Link to PPT: https://www.canva.com/design/DAFhdzPKwjc/6_G3pVzcBbHzFAmKOHWB5Q/watch?utm_content=DAFhdzPKwjc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink</b><br>
 
 <b>Backend Video Demonstration link: https://drive.google.com/file/d/1bw02LNpLfvnXhy0_rBAZztDH3qylsMB0/view?usp=sharing</b> <br>
 <b>Frontend Video Demonsatration link: https://drive.google.com/file/d/1tpzdGg8fTV8JDOVTnfoVrIsf-2QUhPHB/view?usp=sharing</b><br><br>
