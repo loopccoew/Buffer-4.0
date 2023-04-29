@@ -13,7 +13,7 @@ Lisa Susheel(UCE2021439)(SY Comp)</b><br>
  <h2 align="center" id="title">About Project</h2>
                                                        
 
-A contact tracing system which maintains a record of the people you have come into physical contact with. Each person represents a node in the graph. The Edges of the graph shows the relationship between the contatcs. It categorizes zones into red, yellow or red based on the number of postive patients in a particular pincode. <br><br>
+A contact tracing system which maintains a record of the people you have come into physical contact with. Each person represents a node in the graph. The Edges of the graph shows the relationship between the contatcs. It categorizes zones into red, yellow or green based on the number of postive patients in a particular pincode. <br><br>
 
 <b>Drive Link to reports:</b> https://drive.google.com/drive/folders/1PsBnx2qPT49jtdomOmn9jeuzhYxog5o_?usp=sharing<br>
 <b>Canva Link to PPT: https://www.canva.com/design/DAFhdzPKwjc/4oW5i3TNZEMi0OAJmr6LHQ/edit?utm_content=DAFhdzPKwjc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton</b><br>
@@ -46,13 +46,14 @@ A contact tracing system which maintains a record of the people you have come in
 		   <ol>
 	<li><b>about.jsp</b></li>
 	<p>This is the about file. Contains HTML and CSS.<br>
-		Explains to the user about how thw website and the software works.</p>
-	<li><b>admin.jasp</b></li>
+		Explains to the user about how the website and the software works.</p>
+	<li><b>admin.jsp</b></li>
 	<p>Contains Functionality meant for administrator's use</p>
 	<ul>
 		<li>Patient anaylysis: Gives bar graph to show how many patients are infected, not infected and contacted</li>
-		<li>Shows info about conatcted patients</li>
+		<li>Shows info about contacted patients</li>
 		<li>Shows infected and not infected</li>
+		<li>Google Maps: shows nearby hospitals and their details</li>
 	</ul>
 	<li><b>home.jsp</b></li>
 	<p>Login page opens up</p>
@@ -68,7 +69,7 @@ A contact tracing system which maintains a record of the people you have come in
 		<p>Shows functionality meant for user</p>
 		<ul>
 			<li>Bargraph: shows status of infected and non-infected people</li>
-			<li>Google Maps: shows nearby hospitals</li>
+			<li>Google Maps: shows nearby hospitals and their details</li>
 		</ul>
 	</li>
 	<li><b>mymap.jsp</b></li>
