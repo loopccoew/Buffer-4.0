@@ -1,5 +1,5 @@
 BUFFER - 4.0
-Project:- HEALTHCARE
+/Project:- HEALTHCARE
 
 
 
@@ -25,8 +25,8 @@ All the Patients in the stack will be treated before the patients in the list
 
 Team-Members:-
 
-Amruta Gaikwad
-Pragati Deshmukh
-Poonam Banshelkikar
+Amruta Gaikwad , 
+Pragati Deshmukh ,
+Poonam Banshelkikar ,
 Sanchi Jadhav
 
