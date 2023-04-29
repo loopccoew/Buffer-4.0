@@ -18,6 +18,14 @@ This is a web-based application that allows doctors to manage their patient queu
 **Back-end:** Firebase (including Realtime Database and Authentication) for authentication
 
 **Additional tools:** Visual Studio Code as the code editor and Local Storage for storing temporary data
+
+## Instructions before Using
+ - Sign Up as a Patient 
+ - Login as a Patient
+ - Register for an Appointment
+ - Head back and login as a doctor with the credentials email: dr.kellysmith@myradoc.in and password: 123456
+ - Service the patient based on the given queue
+
 ## Team Arcs
 
  - Mrunal Shinde - SY - COMP
@@ -32,3 +40,4 @@ https://drive.google.com/file/d/11DzaeFGXGXay4N_-JlS4lhmF7P1D8itM/view?usp=shari
 ## FeedBack Reports
 
 https://docs.google.com/document/d/13LsFH3T-BQZjuCsXr-FcfYV-NJQKRkL8/edit?usp=sharing&ouid=112103796661072165501&rtpof=true&sd=true
+
