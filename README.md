@@ -18,7 +18,17 @@ This is a web-based application that allows doctors to manage their patient queu
 **Back-end:** Firebase (including Realtime Database and Authentication) for authentication
 
 **Additional tools:** Visual Studio Code as the code editor and Local Storage for storing temporary data
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/me-no-like-codin)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mrunal-shinde-/)
+## Team Arcs
 
+ - Mrunal Shinde - SY - COMP
+ - Srushti Pophale - SY - COMP
+ - Sakshi Vaidya - SY - COMP
+
+
+## Video Demonstration
+
+https://drive.google.com/file/d/11DzaeFGXGXay4N_-JlS4lhmF7P1D8itM/view?usp=sharing
+
+## FeedBack Reports
+
+https://docs.google.com/document/d/13LsFH3T-BQZjuCsXr-FcfYV-NJQKRkL8/edit?usp=sharing&ouid=112103796661072165501&rtpof=true&sd=true
