@@ -20,6 +20,7 @@ This is a web-based application that allows doctors to manage their patient queu
 **Additional tools:** Visual Studio Code as the code editor and Local Storage for storing temporary data
 
 ## Instructions before Using
+ - Open up startpage.html on localhost 
  - Sign Up as a Patient 
  - Login as a Patient
  - Register for an Appointment
