@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Doctor's View</title>
+    <link rel="stylesheet" type="text/css" href="styles-3.css">
+</head>
+
+<body>
+    <h1>Dr.Kelly Smith's View</h1>
+
+    <h2>Current Patient:</h2>
+    <div id="currentPatient"></div>
+
+    <h2>Next Patient:</h2>
+    <div id="nextPatient"></div>
+
+    <h2>Completed Patients:</h2>
+    <ul id="completedPatients"></ul>
+
+    <script>
+        // Initialize patient queue from local storage
+        let patientQueue = JSON.parse(localStorage.getItem("patientQueue"));
+
+        // Display current patient and next patient, if any
+        displayCurrentPatient();
+        displayNextPatient();
+
+        // Function to display the current patient
+        function displayCurrentPatient() {
+            if (patientQueue.length > 0) {
+                let currentPatient = patientQueue[0];
+                let priorityLabel = getPriorityLabel(currentPatient.priority);
+                document.getElementById("currentPatient").innerHTML = `
+                    <h3>${currentPatient.name} - Priority: ${priorityLabel}</h3>
+                  
+                    <button onclick="completePatient()">Service Current Patient</button>
+                `;
+            } else {
+                document.getElementById("currentPatient").innerHTML = `
+                    <h3>No new patient</h3>
+                `;
+            }
+        }
+
+        // Function to display the next patient, if any
+        function displayNextPatient() {
+            if (patientQueue.length > 1) {
+                let nextPatient = patientQueue[1];
+                let priorityLabel = getPriorityLabel(nextPatient.priority);
+                document.getElementById("nextPatient").innerHTML = `
+                        <h3>Next Patient:</h3>
+                        <p>${nextPatient.name} - Priority: ${priorityLabel}</p>
+                    `;
+            } else {
+                document.getElementById("nextPatient").innerHTML = `
+                        <h3>No next patient</h3>
+                    `;
+            }
+        }
+
+        // Function to complete the current patient
+        function completePatient() {
+            let completedPatient = patientQueue.shift(); // Remove current patient from queue
+            displayCurrentPatient(); // Display new current patient or no patient
+            displayNextPatient(); // Display new next patient or no patient
+            if (completedPatient) {
+                displayCompletedPatients(completedPatient); // Display completed patient in completed patients list
+            }
+            savePatientQueue(); // Save updated patient queue to local storage
+        }
+
+        // Function to display completed patients in the completed patients list
+        function displayCompletedPatients(patient) {
+            let priorityLabel = getPriorityLabel(patient.priority);
+            let listItem = document.createElement("li");
+            listItem.innerText = `${patient.name} - Priority: ${priorityLabel}`;
+            document.getElementById("completedPatients").appendChild(listItem);
+        }
+
+        // Function to get the priority label for a given priority value
+        function getPriorityLabel(priority) {
+            switch (priority) {
+                case 1:
+                    return "High";
+                case 2:
+                    return "Medium";
+                case 3:
+                    return "Low";
+            }
+        }
+
+        // Function to save the patient queue to local storage
+        function savePatientQueue() {
+            localStorage.setItem("patientQueue", JSON.stringify(patientQueue));
+        }
+    </script>
+</body>
+
+</html>

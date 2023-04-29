@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Priority Queue Example</title>
+    <link rel="stylesheet" type="text/css" href="styles-3.css">
+</head>
+
+<body>
+    <h1>Priority Queue Example</h1>
+
+    <h2>Registered Patients:</h2>
+    <ul id="patientList"></ul>
+
+    <h2>Register New Patient:</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br><br>
+    <label for="phone">Phone:</label>
+    <input type="text" id="phone"><br><br>
+    <label for="symptoms">Symptoms:</label>
+    <input type="text" id="symptoms"><br><br>
+    <label for="priority">Priority:</label>
+    <select id="priority">
+        <option value="1">High</option>
+        <option value="2">Medium</option>
+        <option value="3" selected>Low</option>
+    </select><br><br>
+    <button onclick="addPatient()">Register</button>
+
+    <script>
+        // Initialize patient queue from local storage, if available
+        let patientQueue = localStorage.getItem("patientQueue");
+        if (patientQueue) {
+            patientQueue = JSON.parse(patientQueue);
+        } else {
+            patientQueue = [
+                { name: "John Doe", phone: "555-1234", symptoms: "Fever", priority: 1 },
+                { name: "Jane Smith", phone: "555-5678", symptoms: "Headache", priority: 2 },
+                { name: "Bob Johnson", phone: "555-9012", symptoms: "Sore throat", priority: 3 }
+            ];
+            savePatientQueue(); // Save prefilled patients to local storage
+        }
+
+        // Display patient queue on page load
+        displayPatients();
+
+        // Function to add a new patient to the queue
+        function addPatient() {
+            let name = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let symptoms = document.getElementById("symptoms").value;
+            let priority = parseInt(document.getElementById("priority").value);
+            if (name && phone && symptoms && priority) {
+                let newPatient = { name: name, phone: phone, symptoms: symptoms, priority: priority };
+                patientQueue.push(newPatient);
+                sortPatientsByPriority(); // Sort patient queue by priority
+                displayPatients(); // Display updated patient queue
+                document.getElementById("name").value = "";
+                document.getElementById("phone").value = "";
+                document.getElementById("symptoms").value = "";
+                document.getElementById("priority").value = "3"; // Set priority back to "Low"
+                savePatientQueue(); // Save patient queue to local storage
+                alert(`You have been registered for an appointment with Dr. Kelly Smith.`);
+            } else {
+                alert("Please enter a name, phone number, symptoms, and priority level.");
+            }
+        }
+
+        // Function to sort the patient queue by priority
+        function sortPatientsByPriority() {
+            patientQueue.sort((a, b) => a.priority - b.priority);
+        }
+
+        // Function to display the patient queue on the page
+function displayPatients() {
+    let patientList = document.getElementById("patientList");
+    patientList.innerHTML = "";
+    patientQueue.forEach(patient => {
+        let priorityLabel = "";
+        switch (patient.priority) {
+            case 1:
+                priorityLabel = "High";
+                break;
+            case 2:
+                priorityLabel = "Medium";
+                break;
+            case 3:
+                priorityLabel = "Low";
+                break;
+        }
+        let listItem = document.createElement("li");
+        listItem.innerText = `${ patient.name } - Priority: ${ priorityLabel }`;
+        patientList.appendChild(listItem);
+    });
+}
+
+        	// Function to save the patient queue to local storage
+	function savePatientQueue() {
+		localStorage.setItem("patientQueue", JSON.stringify(patientQueue));
+	}
+</script>
+</body>
+</html>
