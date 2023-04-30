@@ -1,6 +1,6 @@
 # Buffer-4.0
 
-<h1 align="center" id="title">TECHEASE : Senior Citizen </h1>
+<h1 align="center" id="title">TECHEASE : Senior Citizens </h1>
 
 
 <h3><b>Team Name: Inceptors</b></h3><br>
