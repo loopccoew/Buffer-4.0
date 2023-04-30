@@ -14,3 +14,11 @@ While submitting, note that:
 Each folder should have the name of the team and inside a readme file with team member details, (name, year, branch) and their theme. The readme file should also contain the link to their presentation as well as the drive link where both the report documents would be stored. 
 
 Happy Coding :)
+Team_Number : 73
+Team_Name : Binary_Brains
+Team Theme : Digital Society
+Team_Members :
+1. Tanishqua Kawade SY COMP
+2. Vaishnavi Patil SY IT
+3. Mahima Patil SY IT
+4. Drive Link : https://drive.google.com/drive/folders/1A2qSp_By7OY0aCfx_X8CAuhF7K1wn2ng?usp=sharing
