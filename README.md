@@ -19,7 +19,7 @@ A contact tracing system which maintains a record of the people you have come in
 <b>Canva Link to PPT: https://www.canva.com/design/DAFhdzPKwjc/6_G3pVzcBbHzFAmKOHWB5Q/watch?utm_content=DAFhdzPKwjc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink</b><br>
 
 <b>Backend Video Demonstration link: https://drive.google.com/file/d/1bw02LNpLfvnXhy0_rBAZztDH3qylsMB0/view?usp=sharing</b> <br>
-<b>Frontend Video Demonsatration link: https://drive.google.com/file/d/1tpzdGg8fTV8JDOVTnfoVrIsf-2QUhPHB/view?usp=sharing</b><br><br>
+<b>Frontend Video Demonsatration link: https://drive.google.com/file/d/13MmQUjGn9Nql4x_YV6v6m7tSGqWYhwlM/view?usp=sharing</b><br><br>
 
 <h2 align="center" id="title">Brief Explanation of code files</h2>
 <h3><b>Backend:</h3></b>
