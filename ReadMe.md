@@ -25,7 +25,7 @@ It helps you find the best possible parking spot according to type of vehicle, p
 Project Drive link: https://drive.google.com/drive/folders/1DyMzXsDtXPRPtQ-dLy2_VAP7h9JpjBqR?usp=sharing
 (Video Explanation and Reports)
 
-Sample Website:https://madhavidewalkar.github.io/RAMP_SY_35/
+Sample Website:https://madhavidewalkar.github.io/RAMP_SY/
 
 Data Structures Used:
 Hash Maps
