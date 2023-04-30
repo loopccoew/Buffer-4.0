@@ -1,16 +1,18 @@
-# Buffer-4.0
-Buffer is a Data Structures and Algorithms Project series, in which students can participate as mentees in teams of 3-4 people. 
-This year the themes on which students can create a project are-
+TEAM NAME:phoenix
 
-1. Healthcare
-2. Digital Society
-3. Open Innovation
-4. Custom data structure to store data
+TEAM MEMBERS:
 
-This repository is created for all the teams to be able to upload their final project source code for the same. 
+1.Jayeti Patil
+2.Eesha satvalekar
+3.Harshita Khairnar
+4.Yashashri Phalak
 
-While submitting, note that: 
+THEME :Open innovation
 
-Each folder should have the name of the team and inside a readme file with team member details, (name, year, branch) and their theme. The readme file should also contain the link to their presentation as well as the drive link where both the report documents would be stored. 
+YEAR : 2nd year
 
-Happy Coding :)
+DEMO VIDEO LINK :https://drive.google.com/file/d/15PAtqIVQTbZwwJOQFAbUD_J-724XJxN1/view?usp=sharing
+
+REPORTS :1.https://docs.google.com/document/d/1GXqtBeemrUiJfG6KBOyBWZwLQKFofeFw/edit?usp=sharing&ouid=101378914966263776966&rtpof=true&sd=true
+
+2.https://docs.google.com/document/d/1YG5zFJzbEmA8dDJ7PeFm-iscQBnZvlsh/edit?usp=sharing&ouid=101378914966263776966&rtpof=true&sd=true
