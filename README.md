@@ -17,7 +17,7 @@ Our project's goal is to build a platform for a social network that will enable 
 
 Our project’s main purpose is to achieve the objectives of the project owner  while providing users with a useful and engaging experience.
 
-Drive link for video - https://drive.google.com/drive/folders/160UccfkIrT3pnbmZIr3B38O1qyY4-ABC
+Drive link for video - https://drive.google.com/drive/folders/160UccfkIrT3pnbmZIr3B38O1qyY4-ABC <br />
 Drive link for feedback forms: https://drive.google.com/drive/folders/1XoBLaFDvIbC_WNQ5NOzrOVuLCdO6jhyj
 
 
