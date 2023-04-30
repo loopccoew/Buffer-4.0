@@ -1,14 +1,14 @@
 
 # Buffer-4.0
 
-# Minglr
+## Minglr
 
-# Team Name: ERROR409
+## Team Name: ERROR409
 
-Bhakti Girase -UCE2021419 (SY COMP)
-Bhairavi Bhuyar -UCE2021404 (SY COMP)
-Janhavi Mishra -UCE2021444 (SY COMP)
-Diksha Prakash -UCE2021122 (SY ENTC)
+Bhakti Girase - UCE2021419 (SY COMP) <br />
+Bhairavi Bhuyar - UCE2021404 (SY COMP) <br />
+Janhavi Mishra - UCE2021444 (SY COMP) <br />
+Diksha Prakash - UCE2021122 (SY ENTC) 
 
 Theme - Digital Soceity
 
