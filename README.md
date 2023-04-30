@@ -17,10 +17,10 @@ Happy Coding :)
 
 
 TEAM CTRL:
-Rishita Chourey FY COMP
-Anushka Dalvi FY COMP
-Diksha Talathi FY COMP
-Shreeya Karnik FY COMP
+Rishita Chourey FY COMP|
+Anushka Dalvi FY COMP|
+Diksha Talathi FY COMP|
+Shreeya Karnik FY COMP|
 
 Our team (Team Ctrl) has created an interface named "ClubGenie" as a part of the "Open Innovation" project for Buffer 4.0. The interface is built using Java and Eclipse IDE. The main objective of the interface is to act as a guide for the various student clubs present in MKSSS's Cummins College of Engineering.
 
