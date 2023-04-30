@@ -19,7 +19,7 @@ Living in this technosavvy world, its difficult for elderly people to cope up wi
 So TECHEASE is a user friendly java application with a strong base of various data structures such as arraylist,queue,hashmap and doubly circular linkedlist and with an appealing GUI using Java swing.
 <br><br>
 
-<b>Drive Link to reports:</b> https://drive.google.com/drive/folders/1PsBnx2qPT49jtdomOmn9jeuzhYxog5o_?usp=sharing<br>
+<b>Drive Link to reports:</b>https://drive.google.com/drive/u/1/folders/1fo6LzreVezqPBLvo-2F6B4BU_xee0Jbt<br>
 <b>Drive Link to Video: https://drive.google.com/drive/u/1/folders/1WJMbo4go9Rt9-Oi49ah_rUnZCcGBs-aJ</b><br>
 
 <h2 align="center" id="title">Brief Explanation</h2>
