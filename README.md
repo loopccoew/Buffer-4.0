@@ -1,16 +1,21 @@
+
 # Buffer-4.0
-Buffer is a Data Structures and Algorithms Project series, in which students can participate as mentees in teams of 3-4 people. 
-This year the themes on which students can create a project are-
 
-1. Healthcare
-2. Digital Society
-3. Open Innovation
-4. Custom data structure to store data
+# Minglr
 
-This repository is created for all the teams to be able to upload their final project source code for the same. 
+# Team Name: ERROR409
 
-While submitting, note that: 
+Bhakti Girase -UCE2021419 (SY COMP)
+Bhairavi Bhuyar -UCE2021404 (SY COMP)
+Janhavi Mishra -UCE2021444 (SY COMP)
+Diksha Prakash -UCE2021122 (SY ENTC)
 
-Each folder should have the name of the team and inside a readme file with team member details, (name, year, branch) and their theme. The readme file should also contain the link to their presentation as well as the drive link where both the report documents would be stored. 
+Theme - Digital Soceity
 
-Happy Coding :)
+About Project-
+Our project's goal is to build a platform for a social network that will enable communication between users. It offers the fundamental tools necessary to create an account, log in, view your profiles, connect with friends, search for them, and log out.
+
+Our project’s main purpose is to achieve the objectives of the project owner  while providing users with a useful and engaging experience.
+
+Drive link for video - https://drive.google.com/drive/folders/160UccfkIrT3pnbmZIr3B38O1qyY4-ABC
+
