@@ -1,0 +1,11 @@
+Patient ID,Patient Name,Age,Address,Phone No,Gender,Email,Password,Past surgeries,Current diseases,Current medications,Current BP (mmHg),Current BMI,Current WBC,Current RBC,Blood Group,Height ,Weight
+P202201,Dhananjay Mane,52,Dange Chowk Pune,8965320152,Male,dhananjay8@gmail.com,dhananjay01,Cesarean section.,Chlamydia. Cholera.,"Norfloxacin, trimethoprim-sulfamethoxazole (TMP-SMX), and ciprofloxacin",20.1,7000,2.3,4,O-ve,178,78
+P202202,Ganu Seth,63,Khadewali Chowk Pune,6352102458,Male,ganu.seth@gmail.com,ganu02,Organ replacement.,Congenital Rubella Syndrome. Coronavirus Disease 2019 (COVID-19),acetaminophen,22.4,7800,3.4,5.2,O-ve,180,65
+P202203,Rama Pawar,72,Karvenagar Pune,9632587962,Female,ramapawar@gmail.com,rama03,Joint replacement.,Creutzfeldt-Jakob Disease.,Paracetamol,23.4,5800,3.4,4.1,A-ve,177,45
+P202204,Prakash Patil,40,Kothrud Pune,8456123451,Male,prakashpatil@gmail.com,prakash04,Full hysterectomy.,Cytomegalovirus,Benznidazole,22.7,8900,1,5.6,A+ve,190,39
+P202205,Ashwini Kumble,26,Deccan Pune,7758963222,Female,ashwinik@gmail.com,ashwini05,Heart surgeries.,Acute myeloid leukaemia,AML Treatments,20.4,9000,3,4,B+ve,154,43
+P202206,Soumitra Wagh,17,Malad Mumbai,8569301254,Male,soumitrawagh@gmail.com,soumitra06,"Bariatric surgeries, including the gastric bypass.",Cat Scratch Disease.,oseltamivir,23.5,11000,4,4.9,A+ve,145,60
+P202207,Firoz Khan,34,FC Road Pune,7855596320,Male,firozkhan@gmail.com,firoz07,Appendectomy. ...,Chagas Disease (American trypanosomiasis),"Clarithromycin,Rifampin ,Trimethoprim-sulfamethoxazole.",18.5,4600,1,5,A-ve,162,56
+P202208,Lopez Albert,62,Kharadi Pune,9687546321,Male,Lopezalbert@gmail.com,lopez08,Breast biopsy. ...,Chickenpox (Varicella and Shingles),Benznidazole,19.8,8000,2.6,5.7,B+ve,177,78
+P202209,Atharva Kalamkar,13,Magarpatta Pune,7589632514,Male,atharvak@gmail.com,atharva09,Carotid endarterectomy. ...,Chikungunya.,"acyclovir (Zovirax, Sitavig)",18.9,9000,-3,4.8,B-ve,156,45
+P202210,Dhruv Patil,20,Yerwada Pune,6325698751,Male,dhruv.patil@gmail.com,dhruv10,Cataract surgery. ...,Paralysis,acetaminophen (Tylenol®),19.4,10000,-4,4,O-ve,155,56

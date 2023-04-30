@@ -1,0 +1,11 @@
+Patient ID,Patient Name,Age,Address,Phone No,Gender,Email,Password,Past surgeries,Current diseases,Current medications,Current BP (mmHg),Current BMI,Current WBC,Current RBC,Blood Group,Height ,Weight
+P202211,Priyanka Meshram,13,Magarpatta Pune,9856235478,Female,priyankameshram@gmail.com,priyanka11,Cesarean section.,Chlamydia. Cholera.,"Norfloxacin, trimethoprim-sulfamethoxazole (TMP-SMX), and ciprofloxacin",89,20.1,7000,2.3,A+ve,190,39
+P202212,Smith Singh,2,New Mankapur Naka Pune,9687562130,Male,smithsingh@gmail.com,smith12,Organ replacement.,Congenital Rubella Syndrome. Coronavirus Disease 2019 (COVID-19),acetaminophen,90,22.4,7800,3.4,B+ve,154,43
+P202213,Piyush Shende,45,Hinjewadi Pune,7896542302,Male,piyushshende@gmail.com,piyush13,Joint replacement.,Creutzfeldt-Jakob Disease.,Paracetamol,100,23.4,5800,3.4,B+ve,177,78
+P202214,Jay Bharne,30,Lane 15 Viman nagar Pune,8546215478,Male,jaybharne@gmail.com,jay14,Full hysterectomy.,Cytomegalovirus,Benznidazole,110,22.7,8900,1,B-ve,156,45
+P202215,Kashmira Giripunje,35,Dhayari Pune,6213018456,Female,kashmira785@gmail.com,kashmira15,Heart surgeries.,Acute myeloid leukaemia,AML Treatments,109,20.4,9000,3,O-ve,155,56
+P202216,Tanmay Pandav,41,Shastri nagar Pune,9875624560,male,tanmay896@gmail.com,tanmay16,"Bariatric surgeries, including the gastric bypass.",Cat Scratch Disease.,oseltamivir,90,23.5,11000,4,A+ve,145,60
+P202217,Jaffar Soudagar,32,Tilak Nagar Mumbai,8579642310,Male,jaffar96@gmail.com,jaffar17,Appendectomy. ...,Chagas Disease (American trypanosomiasis),"Clarithromycin,Rifampin ,Trimethoprim-sulfamethoxazole.",90,18.5,4600,1,A-ve,162,56
+P202218,Aranksha Meshram,10,Kalyani Nagar West Mumbai,9658745521,Female,aranksha23@gmail.com,aranksha18,Breast biopsy. ...,Chickenpox (Varicella and Shingles),Benznidazole,100,19.8,8000,2.6,O-ve,178,78
+P202219,Kashish Bajaj,30,Film city Koregaon park Pune,8975642990,Female,kashishbajaj@gmail.com,kashish19,Carotid endarterectomy. ...,Chikungunya.,"acyclovir (Zovirax, Sitavig)",120,18.9,9000,-3,O-ve,180,65
+P202220,vishal Kose,26,Pimpri Pune,8954796255,Male,vishalkose@gmail.com,vishal20,Cataract surgery. ...,Paralysis,acetaminophen (Tylenol®),80,19.4,10000,-4,A-ve,177,45

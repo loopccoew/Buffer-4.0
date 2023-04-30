@@ -1,0 +1,12 @@
+Patient ID,Patient Name,Age,Address,Phone No,Gender,Email,Password,Past surgeries,Current diseases,Current medications,Current BP (mmHg),Current BMI,Current WBC,Current RBC
+P202111,Swaropa Jha,32,South main road Koregaon Park Pune,8955623157,female,jha.swaroopa@gmail.com,swarropa11,Cesarean section.,Chlamydia. Cholera.,"Norfloxacin, trimethoprim-sulfamethoxazole (TMP-SMX), and ciprofloxacin",89,20.1,7000,2.3
+P202112,Saksham Kumar,45,15 kannamwar ward Phaltan,9562014576,male,kumar125@gmail.com,saksham12,Organ replacement.,Congenital Rubella Syndrome. Coronavirus Disease 2019 (COVID-19),acetaminophen,90,22.4,7800,3.4
+P202113,Rohit Kumar,32,91 Subhashnagar Kolhapur,9623657024,male,rohit_kumar@gmail.com,rohit13,Joint replacement.,Creutzfeldt-Jakob Disease.,Paracetamol,100,23.4,5800,3.4
+P202114,Prathmesh Dahikar,24,93 Chatrapati Chowk Kolhapur,6320458120,male,prathmesh458@gmail.com,prathmesh14,Full hysterectomy.,Cytomegalovirus,Benznidazole,110,22.7,8900,1
+P202115,Ritu Hedau,28,lane 5 Deccan Pune,9632587422,female,ritu.hedau@gmail.com,ritu15,Heart surgeries.,Acute myeloid leukaemia,AML Treatments,109,20.4,9000,3
+P202116,Ashish Nimje,35,Kumar Periwinkel Viman nagar Pune,6302487520,male,ashish895@gmail.com,ashish16,"Bariatric surgeries, including the gastric bypass.",Cat Scratch Disease.,oseltamivir,90,23.5,11000,4
+P202117,Asha Manapure,66,Kalyani Nagar Wadgaon Pune,7754620315,female,asha785@gmail.com,asha17,Appendectomy. ...,Chagas Disease (American trypanosomiasis),"Clarithromycin,Rifampin ,Trimethoprim-sulfamethoxazole.",90,18.5,4600,1
+P202118,Malhaar Nimje,3,vile parle east Mumbai,8564230515,male,"nimje785@gmail.com
+",malhaar18,Breast biopsy. ...,Chickenpox (Varicella and Shingles),Benznidazole,100,19.8,8000,2.6
+P202119,Shobha Kanitkar,71,Lane 2 Tulsi Bagh Pune,9865723504,female,shobha.k@gmail.com,shobha19,Carotid endarterectomy. ...,Chikungunya.,"acyclovir (Zovirax, Sitavig)",120,18.9,9000,-3
+P202120,Suman Pidwani,12,Dombivali Mumbai,8459672160,female,suman.pid@gmail.com,suman20,Cataract surgery. ...,Paralysis,acetaminophen (Tylenol®),80,19.4,10000,-4
