@@ -16,7 +16,7 @@
 
 <header>
 	<h1>Vozilo Park</h1>
-	<h2 >Green indicates filled</h2>
+	<h2 style ="float : right; color: green;">Green indicates filled</h2>
 </header>
 
 <div id="login-form">
