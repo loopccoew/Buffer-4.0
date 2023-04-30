@@ -1,16 +1,27 @@
 # Buffer-4.0
-Buffer is a Data Structures and Algorithms Project series, in which students can participate as mentees in teams of 3-4 people. 
-This year the themes on which students can create a project are-
+Team Members
+-Janhavi Gaikward
+-Sanika Rudrawar
+-Janvi Girase
+-Aishwarya Pawar
 
-1. Healthcare
-2. Digital Society
-3. Open Innovation
-4. Custom data structure to store data
+Domain:
+Digital Socicety
 
-This repository is created for all the teams to be able to upload their final project source code for the same. 
+Project Description-
+Users:
+Every person with Accounts in Bank
+Functions:
+-Can Check their balance of the accounts
+-Transfer of Funds/Money
+-Checking Transaction history
+-Access to Loans
+-Switching between accounts
+-Check Account details
+Data Structures and Algorithms Used:
+-LinkedList
+-Array List
+-Stack
 
-While submitting, note that: 
-
-Each folder should have the name of the team and inside a readme file with team member details, (name, year, branch) and their theme. The readme file should also contain the link to their presentation as well as the drive link where both the report documents would be stored. 
-
-Happy Coding :)
+Link of Project Drive:
+https://drive.google.com/drive/folders/1rMzBcLP3BsKULHaEz2F_-R5kxL84IgKm?usp=sharing
