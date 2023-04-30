@@ -1,425 +1,200 @@
 package Travel;
 
-import java.util.*;
+import java.awt.EventQueue;
 
-class Trip{
-	String date[];
-	String name[];
-	int age[];
-	String gender[];
-	long phNo[];
-	//Linked List to store shortest route of booked trip	
-	String storedTrip[];
-	//LinkedList inside LLtrip to store shortest routes of booked trips
-	int n;
+import javax.swing.JFrame;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Font;
+import javax.swing.JLabel;
+import java.awt.Color;
+import javax.swing.SwingConstants;
+import javax.swing.JTextField;
+import javax.swing.JPanel;
+import javax.swing.JLayeredPane;
+import javax.swing.JComboBox;
+import javax.swing.border.CompoundBorder;
 
-	Trip(String date[],String name[],int age[],String gender[],long phNo[],String storedTrip[]){
-		this.date = date;
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
-		this.phNo = phNo;
-		this.storedTrip = storedTrip;
-	}
-}
+import java.awt.Color;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+import javax.swing.border.TitledBorder;
 
 public class User {
-	int num;//no.of passengers
-	int j=0;
-	int choice1;
-	int y=0;
-	String s1,s2;
-	String Bank_Name;
-	String CreditCard;
-	static int routeType;
-	String startLocation;
-	String destination;
-	String route;
-	static City check_sLocation = null;
-	static City check_destination = null;
-	Scanner scn = new Scanner(System.in);
-	Graph graph = new Graph(true,true,true,true,true,true,false);
-	Dijikstra dj = new Dijikstra();
-	Trip trip = new Trip(null,null,null,null,null,null);
-	//Linked list to store previous Trip info with data type of class Trip
-	//LinkedList to store all info of customer
-	LinkedList<Trip> LLTrip = new LinkedList<Trip>(); 
 
-	public void userLogin() {
-		System.out.println("YOU ARE LOGGED IN AS USER");
-		System.out.println("1.MAKE A TRIP");
-		System.out.println("2.SHOW PREVIOUS TRIPS");
-		System.out.print("\nENTER YOUR CHOICE: ");
-		choice1 = scn.nextInt();
+	JFrame frame;
+	private JTextField txtSearchbookgo;
+	private JTextField txtTrip;
 
-		switch(choice1) {
-		case 1:
-			makeTrip();
-			tripPath();
-			break;
-		case 2:
-			showTrip();
-			break;
-		}
-	}
-
-	public void makeTrip() {
-		int choice;
-		String check_route;
-		System.out.print("\nENTER START LOCATION: ");
-		s1 = scn.next();
-		startLocation = s1.substring(0, 1).toUpperCase() + s1.substring(1).toLowerCase(); 
-		check_sLocation=checkCity(startLocation);
-		if(check_sLocation!=null) {
-			System.out.print("\nENTER DESTINATION: ");
-			s2 = scn.next();
-			destination = s2.substring(0, 1).toUpperCase() + s2.substring(1).toLowerCase();  
-			check_destination=checkDestination(destination);
-			if(check_destination!=null) {
-				System.out.print("\nENTER ROUTE (BUS/TRAIN): ");
-				route = scn.next();
-
-				if(route.equalsIgnoreCase("bus") ) {
-
-					System.out.println("\nYOU HAVE BOOKED FOR "+route.toUpperCase()+"!!");
-					//int routeType;
-					System.out.println("ROUTETYPES: \n1 Shortest Distance \n2 Cheapest Cost  \n3 Least Time");
-					routeType=scn.nextInt();
-					if(routeType==1) {
-						y=1;
-					}
-					else if(routeType==2) {
-						y=2;
-					}
-					else if(routeType==3) {
-						y=3;
-					}
-					while(routeType!=1&&routeType!=2&&routeType!=3) {
-						System.out.println("YOU HAVE PROVIDED INVALID ROUTETYPE TO ENTER AGAIN PRESS 1 ELSE PRESS 0: ");
-						int enter=scn.nextInt();
-						if(enter==1) {
-							System.out.print("ENTER VALID ROUTETYPE: ");
-							routeType=scn.nextInt();
-							if(routeType==1) {
-								y=1;
-							}
-							else if(routeType==2) {
-								y=2;
-							}
-							else if(routeType==3) {
-								y=3;
-							}
-						}
-						else {
-							System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-							break;
-						}
-					}
-				}
-				else if(route.equalsIgnoreCase("train")) {
-					System.out.println("\nYOU HAVE BOOKED FOR "+route.toUpperCase()+"!!");
-					//int routeType;
-					System.out.println("ROUTETYPES: \n1 Shortest Distance \n2 Cheapest Cost  \n3 Least Time");
-					routeType=scn.nextInt();
-					if(routeType!=1||routeType!=2||routeType!=3) {
-						y=1;
-					}
-					if(routeType==1) {
-						y=4;
-					}
-					else if(routeType==2) {
-						y=5;
-					}
-					else if(routeType==3) {
-						y=6;
-					}
-					while(routeType!=1&&routeType!=2&&routeType!=3) {
-						System.out.println("YOU HAVE PROVIDED INVALID ROUTETYPE TO ENTER AGAIN PRESS 1 ELSE PRESS 0: ");
-						int enter=scn.nextInt();
-						if(enter==1) {
-							System.out.print("ENTER VALID ROUTETYPE: ");
-							routeType=scn.nextInt();
-							if(routeType==1) {
-								y=4;
-							}
-							else if(routeType==2) {
-								y=5;
-							}
-							else if(routeType==3) {
-								y=6;
-							}
-						}
-						else {
-							System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-							break;
-						}
-					}
-				}
-				while(!route.equalsIgnoreCase("bus") && !route.equalsIgnoreCase("train")) {		
-					System.out.print("\nINVALID ROUTE SELECTED!!\nENTER VAILD ROUTE (BUS/TRAIN) OR TO EXIT TYPE EXIT: ");
-					route = scn.next();
-					if(route.equalsIgnoreCase("exit")) {
-						System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-						break;
-					}
-					else if(route.equalsIgnoreCase("bus")) {
-						System.out.println("\nYOU HAVE BOOKED FOR "+route.toUpperCase()+"!!");
-						//int routeType;
-						System.out.println("ROUTETYPES: \n1 Shortest Distance \n2 Cheapest Cost  \n3 Least Time");
-						routeType=scn.nextInt();
-						if(routeType==1) {
-							y=1;
-						}
-						else if(routeType==2) {
-							y=2;
-						}
-						else if(routeType==3) {
-							y=3;
-						}
-						while(routeType!=1&&routeType!=2&&routeType!=3) {
-							System.out.println("YOU HAVE PROVIDED INVALID ROUTETYPE TO ENTER AGAIN PRESS 1 ELSE PRESS 0: ");
-							int enter=scn.nextInt();
-							if(enter==1) {
-								System.out.print("ENTER VALID ROUTETYPE: ");
-								routeType=scn.nextInt();
-								if(routeType==1) {
-									y=1;
-								}
-								else if(routeType==2) {
-									y=2;
-								}
-								else if(routeType==3) {
-									y=3;
-								}
-							}
-							else {
-								System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-								break;
-							}
-						}
-					}
-					else if(route.equalsIgnoreCase("train")) {
-						System.out.println("\nYOU HAVE BOOKED FOR "+route.toUpperCase()+"!!");
-						//int routeType;
-						System.out.println("ROUTETYPES: \n1 Shortest Distance \n2 Cheapest Cost  \n3 Least Time");
-						routeType=scn.nextInt();
-						if(routeType==1) {
-							y=4;
-						}
-						else if(routeType==2) {
-							y=5;
-						}
-						else if(routeType==3) {
-							y=6;
-						}
-						while(routeType!=1&&routeType!=2&&routeType!=3) {
-							System.out.println("YOU HAVE PROVIDED INVALID ROUTETYPE TO ENTER AGAIN PRESS 1 ELSE PRESS 0: ");
-							int enter=scn.nextInt();
-							if(enter==1) {
-								System.out.print("ENTER VALID ROUTETYPE: ");
-								routeType=scn.nextInt();
-								if(routeType==1) {
-									y=4;
-								}
-								else if(routeType==2) {
-									y=5;
-								}
-								else if(routeType==3) {
-									y=6;
-								}
-							}
-							else {
-								System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-								break;
-							}
-						}
-					}
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					User window = new User();
+					window.frame.setVisible(true);
+					window.frame.setLocationRelativeTo(null);
+				} catch (Exception e) {
+					e.printStackTrace();
 				}
 			}
-		}
-	}
-	public City checkCity(String city) {
-		City checksLocation=null;
-		checksLocation = graph.getCityByValue(city);
-		int choice=0;
-		while(checksLocation==null) {
-			System.out.println("\nCITY NOT PRESENT");
-			System.out.print("STILL WANT TO CONTINUE???\nPRESS 1 FOR EXIT: ");
-			choice = scn.nextInt();
-			if(choice!=1) {
-				System.out.print("\nENTER START LOCATION: ");
-				city = scn.next();
-				checksLocation = graph.getCityByValue(city);
-			}
-			else {
-				System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-				break;
-			}
-
-		}
-		return checksLocation;
-	}
-	public City checkDestination(String city) {
-		City checksLocation=null;
-		checksLocation = graph.getCityByValue(city);
-		int choice=0;
-		while(checksLocation==null) {
-			System.out.println("\nCITY NOT PRESENT");
-			System.out.print("STILL WANT TO CONTINUE???\nPRESS 1 FOR EXIT: ");
-			choice = scn.nextInt();
-			if(choice!=1) {
-				System.out.print("\nENTER DESTINATION: ");
-				city = scn.next();
-				checksLocation = graph.getCityByValue(city);
-			}
-			else {
-				System.out.println("\nYOU HAVE QUIT SUCCESSFULLY!!!");
-				break;
-			}
-		}
-		return checksLocation;
+		});
 	}
 
-	public void prevTrip(){
-		//Saving booked trip
-		Trip info;
-		info = new Trip(trip.date,trip.name,trip.age,trip.gender,trip.phNo,trip.storedTrip);
-		LLTrip.add(j,info);
-		j++;
+	/**
+	 * Create the application.
+	 */
+	public User() {
+		initialize();
 	}
 
-	public void tripPath() {
-		if(y==1||y==2||y==3||y==4||y==5||y==6) {
-			Dijikstra dj =new Dijikstra();
-
-			dj.z=y;
-			System.out.println(y);
-			dj.dijikstraResultPrinter(dj.dijikstra(graph,check_sLocation));
-			dj.shortestPathBetween(graph,check_sLocation,check_destination);
-	
-			System.out.println("\n1. Do you want to book for this trip ?");
-			System.out.println("2. Go back");
-			System.out.println("Enter 1 to book");
-			int book = scn.nextInt();
-
-			if(book==1) {
-				//Details of customer 
-
-				System.out.println("Enter the no. of passengers: ");
-				num = scn.nextInt();
-
-				trip.date = new String[num];
-				trip.name=new String[num];
-				trip.age=new int[num];
-				trip.gender=new String[num];
-				trip.phNo=new long[num];
-				trip.storedTrip=new String[num];
-				
-				for(int i=0;i<num;i++) {
-					System.out.println("Enter details of passenger "+(i+1));
-					System.out.println("Enter Date and Day of Travel: ");
-					trip.date[i] = scn.next();
-					System.out.println("Name: ");
-					trip.name[i] = scn.next();
-					System.out.println("Age: ");
-					trip.age[i] = scn.nextInt();
-					System.out.println("Gender: ");
-					trip.gender[i] = scn.next();
-					System.out.println("Phone No.: ");
-					trip.phNo[i] = scn.nextInt();
-					trip.storedTrip[i] = dj.a;
-				}
-				//Storing confirmed trip 
-				prevTrip();
-				dj.a = null;
-
-				dj.shortestPathBetween(graph,check_sLocation,check_destination);
-				System.out.println("\n1. Proceed to Payment");
-				System.out.println("2. Cancel booking");
-				int booking = scn.nextInt();
-				if(booking==1) {
-					System.out.println("\nTotal number of Passengers: "+num);
-					System.out.println("Total Booking Price: "+(num*dj.getCost())+" Rs");
-					System.out.println("\n***PAYMENT***");
-					System.out.println("Enter your Bank Name: ");
-					Bank_Name = scn.next();
-					System.out.println("Enter Credit card details: ");
-					CreditCard = scn.next();
-					
-					System.out.println("\nTrip booked sucessfully");
-					System.out.println("\n1. Make another trip\n2. Show previous Trips\n3. Exit");
-					int another_trip = scn.nextInt();
-
-					if(another_trip==1) {
-						makeTrip();
-						tripPath();
-
-					}
-					else if(another_trip==2) {
-						showTrip();
-					}
-					else {
-						System.out.println("Exit sucessfully");
-					}
-				}
-				else {
-					System.out.println("Booking canceled");
-					for(int i=0;i<LLTrip.size();i++) {
-						LLTrip.remove(i).date=null;
-						LLTrip.remove(i).name=null;
-						LLTrip.remove(i).age=null;
-						LLTrip.remove(i).gender=null;
-						LLTrip.remove(i).phNo=null;
-						LLTrip.remove(i).storedTrip=null;
-					}
-				}
-			}
-			else if(book==2){
-				userLogin();
-			}
-			else{
-				System.out.println("Do you want to exit");
-				System.out.println("2. Exit");
-				tripPath();
-			}
-		}
-	}
-	
-	public void showTrip(){
-		if(LLTrip.size() != 0) {
-		System.out.println("***Your prev trips*** ");
-		for(int i=0;i<LLTrip.size();i++) {
-			System.out.println("\n---Trip "+(i+1)+"---");
-			for(int k=0;k<(LLTrip.get(i).name.length);k++) {
-				System.out.println("\nPassenger "+(k+1));
-				System.out.println("Date Of Travel: "+LLTrip.get(i).date[k]);
-				System.out.println("Name: "+LLTrip.get(i).name[k]);
-				System.out.println("Age: "+LLTrip.get(i).age[k]);
-				System.out.println("Gender: "+LLTrip.get(i).gender[k]);
-				System.out.println("PhoneNo: "+LLTrip.get(i).phNo[k]);
-				System.out.println(LLTrip.get(i).storedTrip[k]);
-			}
-		}
-		System.out.println("\n1. Make another trip\n2.Show previous Trips\n3.Exit");
-		int another_trip = scn.nextInt();
-
-		if(another_trip==1) {
-			makeTrip();
-			tripPath();
-
-		}
-		else if(another_trip==2) {
-			showTrip();
-		}
-		else {
-			System.out.println("Exit sucessfully");
-		}
-		}
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(Color.WHITE);
+		frame.setBounds(100, 100, 975, 520);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
 		
-		else {
-			System.out.println("No booked Trips");
-		}
+		JButton btnNewButton = new JButton("Train");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Train1 t=new Train1();
+				//txtuser.setText("");
+				t.Train1_frame.setVisible(true);
+				t.Train1_frame.setLocationRelativeTo(null);
+			}
+		});
+		btnNewButton.setFont(new Font("Segoe Print", Font.PLAIN, 15));
+		ImageIcon train = new ImageIcon(this.getClass().getResource("train.png"));
+		btnNewButton.setIcon(train);
+		btnNewButton.setBounds(141, 11, 129, 55); 
+		frame.getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("Buses");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Bus1 b=new Bus1();
+				//txtuser.setText("");
+				b.Bus1_frame.setVisible(true);
+				b.Bus1_frame.setLocationRelativeTo(null);
+			}
+		});
+		ImageIcon buses = new ImageIcon(this.getClass().getResource("buses.png"));
+		btnNewButton_1.setIcon(buses);
+		btnNewButton_1.setFont(new Font("Segoe Print", Font.PLAIN, 15));
+		btnNewButton_1.setBounds(272, 11, 123, 55);
+		frame.getContentPane().add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("Hotels");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		ImageIcon hotels = new ImageIcon(this.getClass().getResource("hotels.png"));
+		btnNewButton_2.setIcon(hotels);
+		btnNewButton_2.setFont(new Font("Segoe Print", Font.PLAIN, 15));
+		btnNewButton_2.setBounds(433, 11, 138, 55);
+		frame.getContentPane().add(btnNewButton_2);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setForeground(Color.BLACK);
+		ImageIcon banner = new ImageIcon(this.getClass().getResource("bus.png"));
+		lblNewLabel_1.setIcon(banner);
+		lblNewLabel_1.setOpaque(false);
+		lblNewLabel_1.setBounds(240, 136, 96, 76);
+		frame.getContentPane().add(lblNewLabel_1);
+		
+		txtSearchbookgo = new JTextField();
+		txtSearchbookgo.setBorder(null);
+		txtSearchbookgo.setForeground(Color.WHITE);
+		txtSearchbookgo.setFont(new Font("Segoe Print", Font.BOLD, 30));
+		txtSearchbookgo.setText("search . book . go");
+		txtSearchbookgo.setOpaque(false);
+		//txtSearchbookgo.setVisible(true);
+		txtSearchbookgo.setBounds(318, 145, 311, 55);
+		frame.getContentPane().add(txtSearchbookgo);
+		txtSearchbookgo.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("");
+		ImageIcon scene1 = new ImageIcon(this.getClass().getResource("main (1).jpg"));
+		lblNewLabel.setIcon(scene1);
+		lblNewLabel.setBounds(0, 66, 960, 353);
+		frame.getContentPane().add(lblNewLabel);
+		ImageIcon login = new ImageIcon(this.getClass().getResource("login.png"));
+		
+		JButton btnNewButton_5 = new JButton("About Us");
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AboutUs a=new AboutUs();
+				a.Aboutus_frame.setVisible(true);
+				a.Aboutus_frame.setLocationRelativeTo(null);
+			}
+		});
+		btnNewButton_5.setFont(new Font("Segoe Print", Font.PLAIN, 20));
+		btnNewButton_5.setHorizontalAlignment(SwingConstants.LEFT);
+		btnNewButton_5.setBounds(0, 419, 960, 34);
+		frame.getContentPane().add(btnNewButton_5);
+		
+		JButton btnNewButton_6 = new JButton("Places To Visit");
+		btnNewButton_6.setHorizontalAlignment(SwingConstants.LEFT);
+		btnNewButton_6.setFont(new Font("Segoe Print", Font.PLAIN, 20));
+		btnNewButton_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				PlacesToVisit skySlideshow = new PlacesToVisit();
+			    skySlideshow.setVisible(true);
+			    skySlideshow.setLocationRelativeTo(null);
+			}
+		});
+		btnNewButton_6.setBounds(0, 453, 960, 34);
+		frame.getContentPane().add(btnNewButton_6);
+		
+		JButton btnNewButton_7 = new JButton("Help");
+		btnNewButton_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Help h=new Help();
+				h.Help_frame.setVisible(true);
+				h.Help_frame.setLocationRelativeTo(null);
+			}
+		});
+		btnNewButton_7.setFont(new Font("Segoe Print", Font.PLAIN, 15));
+		btnNewButton_7.setBounds(870, 11, 90, 55);
+		frame.getContentPane().add(btnNewButton_7);
+		
+		txtTrip = new JTextField();
+		txtTrip.setBorder(null);
+		txtTrip.setForeground(Color.RED);
+		txtTrip.setFont(new Font("Rage Italic", Font.PLAIN, 36));
+		txtTrip.setText("GoTravel");
+		txtTrip.setBounds(10, 10, 138, 53);
+		frame.getContentPane().add(txtTrip);
+		txtTrip.setColumns(10);
+		
+		JButton btnNewButton_7_1 = new JButton("Contact Us");
+		btnNewButton_7_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ContactUs c=new ContactUs();
+				c.frame.setVisible(true);
+				c.frame.setLocationRelativeTo(null);
+				
+			}
+		});
+		btnNewButton_7_1.setFont(new Font("Segoe Print", Font.PLAIN, 15));
+		btnNewButton_7_1.setBounds(731, 11, 138, 55);
+		frame.getContentPane().add(btnNewButton_7_1);
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }
-
-

@@ -1,21 +1,17 @@
 package Travel;
 
-import java.util.*;
-public class Graph{
+import java.util.LinkedList;
+import java.util.Scanner;
+public class Graph {
+	//data-city,Edges-Routes,Vertex-City,vertex-city
 	static LinkedList<City> cities;
-	String value;
-	boolean isBusDist;
-	boolean isTrainDist;
-	boolean isBusCost;
-	boolean isTrainCost;
-	boolean isBusTime;
-	boolean isTrainTime;
+	boolean isBusDist,isTrainDist,isBusCost,isTrainCost,isBusTime,isTrainTime;//isbusDist
 	boolean isDirected;
 	
-	public Graph(boolean isBusDist,boolean isTrainDist,boolean isBusCost,
-			boolean isTrainCost,boolean isBusTime,boolean isTrainTime,boolean isDirected){
-		this.cities = new LinkedList<City>();
-		this.isBusDist = isBusDist;
+	public Graph(boolean isBusDist,boolean isTrainDist,boolean isBusCost,boolean isTrainCost,boolean isBusTime,boolean isTrainTime
+			,boolean isDirected) {
+		this.cities=new LinkedList<City>();
+		this.isBusDist=isBusDist;
 		this.isTrainDist=isTrainDist;
 		this.isBusCost=isBusCost;
 		this.isTrainCost=isTrainCost;
@@ -23,46 +19,32 @@ public class Graph{
 		this.isTrainTime=isTrainTime;
 		this.isDirected=isDirected;
 	}
-	
+
 	public City addCity(String city) {
-		City newCity = new City(city);
+		City newCity=new City(city);
 		this.cities.add(newCity);
 		return newCity;
 	}
-	
-	//Abstraction 
-	public void addRoutes(City city1, City city2,Integer busDist,Integer trainDist,Integer busCost,
-			Integer trainCost,Integer busTime,Integer trainTime) {
-		//Sadhya purt bus dist ghetl aahe
-		if(!this.isBusDist) {
-			busDist = null;
+
+	public void addRoute(City city1,City city2,Integer busDist,Integer trainDist,Integer busCost,
+			Integer trainCost,Integer busTime,Integer trainTime) {//provides abstraction 
+		//ata purta fakt busdist consider kela in future will add
+		if(!this.isBusDist) {//if dist not given consider it as null
+			busDist=null;
 		}
-		city1.addRoutes(city2,busDist,trainDist,busCost,trainCost,busTime,trainTime);
+		city1.addRoutes(city2,busDist,trainDist,busCost,
+				trainCost,busTime,trainTime);
 		if(!this.isDirected) {
-			city2.addRoutes(city1,busDist,trainDist,busCost,trainCost,busTime,trainTime);
-		}
+			city2.addRoutes(city1,busDist,trainDist,busCost,
+					trainCost,busTime,trainTime);
+		}	
 	}
-	
-	public void removeRoutes(City city1,City city2) {
-		city1.removeRoutes(city2);
-		if(!this.isDirected) {
-			city2.removeRoutes(city1);
-		}
-	}
-	
-	public void removeCity(City city) {
-		this.cities.remove(city);
-	}
-	public void removeCity(String cityName) {
-	    Iterator<City> iter = this.cities.iterator();
-	    while (iter.hasNext()) {
-	        City city = iter.next();
-	        if (city.getCity().equals(cityName)) {
-	            iter.remove();
-	            return;
-	        }
-	    }
-	}
+//	public void removeRoute(City city1,City city2) {
+//		city1.removeRoutes(city2);
+//		if(!this.isDirected) {
+//			city2.removeRoutes(city1);
+//		}
+//	}
 	public void removeRoute(String city1Name, String city2Name) {
 	    City city1 = getCityByValue(city1Name);
 	    City city2 = getCityByValue(city2Name);
@@ -76,88 +58,154 @@ public class Graph{
 	    }
 	    System.out.println("Route between " + city1.getCity() + " and " + city2.getCity() + " has been removed.");
 	}
-	
-	
-	//Helper methods
+	public void removeCity(City city) {
+		this.cities.remove(city);
+	}
+
 	public LinkedList<City> getCities(){
 		return this.cities;
 	}
-	//Sadhya purt bus dist ghetl aahe
+
 	public boolean isBusDist() {
-		return this.isBusDist();
+		return this.isBusDist;
 	}
+
+	public boolean isTrainDist() {
+		return this.isTrainDist;
+	}
+
+	//	public boolean isBusCost() {
+	//		return this.isBusCost;
+	//	}
+
+	public boolean isTrainCost() {
+		return this.isTrainCost;
+	}
+
+	public boolean isBusTime() {
+		return this.isBusTime;
+	}
+
+	public boolean isTrainTime() {
+		return this.isTrainTime;
+	}
+
 	public boolean isDirected() {
 		return this.isDirected;
 	}
 
-	public City getCityByValue(String value) {
-		for(City c : this.cities){
+
+	public City getCityByValue(String value) {//to check whether city 
+		//is present or not
+		//System.out.println("hi");
+		for(City c:this.cities) {
+			//System.out.println("hi");
 			if(c.getCity().equals(value)) {
 				return c;
+				
 			}
-			else
-				continue;
+		
 		}
 		return null;
-	}
-	
-	public void print() {
-		for(City c: this.cities) {
-			//Sadhya purt bus dist ghetl aahe
-			c.print(isBusDist);
-		}
-	}
-	
-	
-	//This method add cities to the linked list
-	public void addcityy() {
-		City MumbaiStation = addCity("Mumbai");
-		City PuneStation = addCity("Pune");
-		City NagpurStation = addCity("Nagpur");
-		City DelhiStation = addCity("Delhi");
-		City AmravatiStation = addCity("Amravati");
-		City AkolaStation = addCity("Akola");
-		City BadneraStation = addCity("Badnera");
-		
-		addRoutes(MumbaiStation, PuneStation, 40, 30, 45, 30, 1, 2);
-		addRoutes(MumbaiStation, DelhiStation, 40, 30, 15, 30, 1, 2);
-		addRoutes(MumbaiStation, NagpurStation,80, 60, 55, 60, 2, 4);
-		addRoutes(PuneStation, NagpurStation, 40, 30, 10, 30, 1, 2);
-		addRoutes(NagpurStation, AmravatiStation, 40, 30, 55, 30, 1, 2);
-		addRoutes(AmravatiStation, AkolaStation, 40, 30, 50, 30, 1, 2);
-		addRoutes(PuneStation, BadneraStation, 20, 30, 25, 30, 1, 2);
-		addRoutes(BadneraStation, AkolaStation, 10, 30, 55, 30, 1, 2);
-	} 
-	public static void main(String[]args) {
-		int choice;
-		
-		User user = new User();
-		Admin admin = new Admin();
-		//ya line la error yeu shakto 
-		Graph busNetwork = new Graph(true,true,true,true,true,true,false);
-		busNetwork.addcityy();
-		//Here if we put 'false' for isDirected then the graph becomes undirected
-		//else it is directed
-		
-		Scanner scn = new Scanner(System.in);
-		System.out.println("*****WELCOM TO GO TRAVEL*****");
-		System.out.println("1.ADMIN LOGIN");
-		System.out.println("2.USER LOGIN");
-		choice = scn.nextInt();
 
+
+
+		
+	}
+
+	public void print() {
+		int i=0;
+		for(City c: this.cities) {
+			if(i<1) {
+				c.print(isBusDist);
+				i++;}//fakt isBusDist sathi lihila in future baki karu
+		}
+		
+	}
+	
+	
+	String Checkpassword(String password) {
+		Scanner scan=new Scanner(System.in);
+		int exit=0;
+		while(!password.equals("sam")){
+			System.out.print("\nTO EXIT PRESS 1: ");
+			exit=scan.nextInt();
+			if(exit==1) {
+				System.out.println("YOU HAVE EXIT SUCCESSFULLY!!");
+				break;
+			}
+			else {
+				System.out.print("\nPLEASE ENTER VALID PASSWORD: ");
+				password = scan.next();
+			}
+		}
+
+		return password;
+	}
+	public void addcityy() {
+		Graph busNetwork = new Graph(true, true, true, true, true, true, false);
+		//when isDirected is false undirected is considered
+		//this line might be wrong was like isBusDist:true but was giving error 
+		//so wrote like this
+		//Userr user=new Userr();
+		City MumbaiStation = busNetwork.addCity("Mumbai");
+		City PuneStation = busNetwork.addCity("Pune");
+		City NagpurStation = busNetwork.addCity("Nagpur");
+		City DelhiStation = busNetwork.addCity("Delhi");
+		
+		
+		
+		busNetwork.addRoute(MumbaiStation, PuneStation, 40, 30, 50, 30, 1, 2);
+		busNetwork.addRoute(MumbaiStation, DelhiStation, 40, 30, 50, 30, 1, 2);
+		busNetwork.addRoute(PuneStation, NagpurStation, 40, 30, 50, 30, 1, 2);
+	}
+	public static void main(String[] args) {
+		Graph busNetworkk = new Graph(true, true, true, true, true, true, false);
+		//when isDirected is false undirected is considered
+		//this line might be wrong was like isBusDist:true but was giving error 
+		//so wrote like this
+		Userr user=new Userr();
+//		City MumbaiStation = busNetwork.addCity("Mumbai");
+//		City PuneStation = busNetwork.addCity("Pune");
+//		City NagpurStation = busNetwork.addCity("Nagpur");
+//		City DelhiStation = busNetwork.addCity("Delhi");
+//		
+//		
+//		
+//		busNetwork.addRoute(MumbaiStation, PuneStation, 40, 30, 50, 30, 1, 2);
+//		busNetwork.addRoute(MumbaiStation, DelhiStation, 40, 30, 50, 30, 1, 2);
+//		busNetwork.addRoute(PuneStation, NagpurStation, 40, 30, 50, 30, 1, 2);
+		
+		busNetworkk.addcityy();
+		Scanner scan=new Scanner(System.in);
+		int choice=0;
+		
+		System.out.println("********************WELCOME TO TRAVEL PLANNER********************"
+				+ "\n1.ADMIN LOGIN\n2.USER LOGIN\n");
+		System.out.print("ENTER YOUR CHOICE: ");
+		choice=scan.nextInt();
+		scan.nextLine();
 		switch(choice) {
 		case 1:
+			Bus1 bu=new Bus1();
+			System.out.println(bu.busdist);
 			String password;
 			System.out.print("\nPLEASE ENTER PASSWORD: ");
-			password = scn.next();
-			password=admin.Checkpassword(password);
-			admin.AdminLogin();
-			break;
-
+			password = scan.nextLine();
+			password=busNetworkk.Checkpassword(password);
+			busNetworkk.print();
+			break;//sysout ctr+space
 		case 2:
+			
 			user.userLogin();
 			break;
+		default:
+			System.out.println("PLEASE ENTER VALID CHOICE!!");
 		}
+		
+		//busNetwork.print();
+		//System.out.println(City.routes.size());
 	}
 }
+
 

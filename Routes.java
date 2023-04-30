@@ -48,4 +48,3 @@ public class Routes {
 		return this.trainTime;
 	}
 }
-
