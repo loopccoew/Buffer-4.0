@@ -1,0 +1,11 @@
+Patient ID,Patient Name,Age,Address,Phone No,Gender,Email,Password,Past surgeries,Current diseases,Current medications,Current BP (mmHg),Current BMI,Current WBC,Current RBC
+P202101,Anjali Wagh,15,12 Lane5 manewada Pune,9875210542,Female,anjaliwagh17@gmail.com,anjali01,Appendectomy,Malaria,B12,101.0,20.1,7000,2.5
+P202102,Mayuri Jain,20,15 Subhash nagar Pune,9630215478,Female,mayuri.jain@gmail.com,mayuri02,breast Biopsy,Creutzfeldt-Jakob Disease.,Paracetamol,23.5,110.0,7800,3.4
+P202103,Amar Goyal,80,16 Chatrapati nagar Pune,9624510278,Male,amar15@gmail.com,amar03,Carotid endarterectomy. ...,Cytomegalovirus,Benznidazole,109.0,23.4,5800,3.4
+P202104,Aditya Kadam,47,5 Ravivar Peth Latur,9825401547,Male,aditya82@gmail.com,aditya04,Cataract surgery. ...,Acute myeloid leukaemia,AML Treatments,90.0,22.7,8900,1.0
+P202105,Vaishnavi Godhad,25,101 Lane 2  Karvenagar Pune,8521450215,Female,vaishnavi452@gmail.com,vaishnavi05,Organ replacement.,Flu,oseltamivir,120.0,20.4,9000,3.0
+P202106,Ashish Shubh,41,35 Manindar Chowk  Lonavala,6021530472,Male,ashish8521@gmail.com,ashish06,Joint replacement.,Cat Scratch Disease.,"Clarithromycin,Rifampin ,Trimethoprim-sulfamethoxazole.",80.0,23.5,11000,4.0
+P202107,Aditi Modi,38,11 Lane 9 Lakshminagar Pune,8524130785,Female,modiaditi@gmail.com,aditi07,Full hysterectomy.,Chagas Disease (American trypanosomiasis),Benznidazole,89.0,18.5,4600,1.0
+P202108,Hitesh Patel,55,12   Karve nagar Pune,9002151278,male,hiteshpatel@gmail.com,hitesh08,Heart surgeries.,Chickenpox (Varicella and Shingles),"acyclovir (Zovirax, Sitavig)",90.0,19.8,8000,2.6
+P202109,Sagar Karende,68,Lane 5  Kothrud pune,9620085210,male,sagar96@gmail.com,sagar09,Kidney Stones,Chikungunya.,acetaminophen (Tylenol®),90.0,18.9,9000,-3.0
+P202110,Samruddhi Samarth,17,Lane 9  Katraj pune,7220489630,female,sam7895@gmail.com,samruddhi10ss,Appendics,Chlamydia. Cholera.,"Norfloxacin, trimethoprim-sulfamethoxazole (TMP-SMX), and ciprofloxacin",100.0,19.4,10000,-4.0

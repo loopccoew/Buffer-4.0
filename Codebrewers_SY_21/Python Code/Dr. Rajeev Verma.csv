@@ -1,0 +1,14 @@
+Patient ID,Patient Name,Age,Address,Phone No,Gender,Email,Password,Past surgeries,Current diseases,Current medications,Current BP (mmHg),Current BMI,Current WBC,Current RBC,Blood Group,Height ,Weight
+P202121,Tanisha Bodhwani,10,Swami Samarth Society Vashi Pune,9875642304,female,tanisha@gmail.com,tanisha21,Appendectomy. ...,Cat Scratch Disease.,"Clarithromycin,Rifampin ,Trimethoprim-sulfamethoxazole.",90,18.5,4600,1,A-ve,145,78
+P202122,Devyani Kalamkar,15,New Mankapur Naka Pune,8496578240,female,devikalmakar@gmail.com,devyani22,Breast biopsy. ...,Chagas Disease (American trypanosomiasis),Benznidazole,100,19.8,8000,2.6,A+ve,162,68
+P202123,Himanshu Gajbhiye,23,Hinjewadi Pune,9625785112,male,himanshu9874@gmail.com,himanshu23,Carotid endarterectomy. ...,Chickenpox (Varicella and Shingles),"acyclovir (Zovirax, Sitavig)",120,18.9,9000,-3,B-ve,177,45
+P202124,Tanmay Bhatt,33,Lane 15 Viman nagar Pune,9687521000,male,bhatttanmay@gmail.com,tanmay24,Cataract surgery. ...,Chikungunya.,acetaminophen (Tylenol®),80,19.4,10000,-4,B+ve,156,60
+P202125,Gaurav Shrivastava,48,Dhayari Pune,8654231500,male,gaurav3698@gmail.com,gaurav25,Cesarean section (also called a c-section). ...,Chlamydia. Cholera.,"Norfloxacin, trimethoprim-sulfamethoxazole (TMP-SMX), and ciprofloxacin",89,20.1,7000,2.3,O+ve,155,65
+P202126,Prabhakar Samarth,36,Shastri nagar Pune,9875126548,male,prabhakardahikar@gmail.com,prabhakar16,Cholecystectomy,Congenital Rubella Syndrome. Coronavirus Disease 2019 (COVID-19),acetaminophen,90,22.4,7800,3.4,O+ve,134,70
+P202127,Shubham Gujrathi,67,Tilak Nagar Mumbai,6254879533,male,shubham.gujrathi@gmail.com,shubham27,Coronary artery bypass. ...,Creutzfeldt-Jakob Disease.,Paracetamol,100,23.4,5800,3.4,B-ve,180,89
+P202128,Aditya Chahande,30,Kalyani Nagar West Mumbai,9687546213,male,aditya582@gmail.com,aditya28,"Debridement of wound, burn, or infection.",Cytomegalovirus,Benznidazole,110,22.7,8900,1,A-ve,177,88
+P202129,Gopal Goyal,69,Film city Koregaon park Pune,8795462310,male,gopalgoyal@gmail.com,gopal29,Hemorrhoidectomy.,Acute myeloid leukaemia,AML Treatments,109,20.4,9000,3,A+ve,190,45
+P202130,Aman Goyal,40,Pimpri Pune,8765423510,male,amangoyal@gmail.com,aman30,Hysteroscopy,Flu,oseltamivir,90,23.5,11000,4,A-ve,154,46
+
+
+P202101,Anjali Wagh,15,12 Lane5 manewada Pune,9875210542,Female,anjaliwagh17@gmail.com,anjali01
