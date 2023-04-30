@@ -1,16 +1,34 @@
-# Buffer-4.0
-Buffer is a Data Structures and Algorithms Project series, in which students can participate as mentees in teams of 3-4 people. 
-This year the themes on which students can create a project are-
+# UNZIP PUNE
+## "Have the best experience of travelling Pune with us..."
 
-1. Healthcare
-2. Digital Society
-3. Open Innovation
-4. Custom data structure to store data
+### Objectives:
+> * Create a better experience of travelling tourist places in Pune
+> * Help find the shortest distance between tourist places to visit
+> * Create a feasible Pune Yatra trip, allowing user to decide where to start
+> * Make people aware of the significance of every tourist place
 
-This repository is created for all the teams to be able to upload their final project source code for the same. 
+### Features:
+> * Helps to get an idea about the actual distance between different tourist places in Pune
+> * Helps plan a Pune Yatra trip by placing various tourist places in order, without breaking banks
+> * The trip will be planned according to user's convenience of starting location
+> * Gives information about various tourist locations in Pune
 
-While submitting, note that: 
+### Programming language used : Java
+### Data structures used : Graphs, Binary Search Tree
+### Libraries used : java.util.Scanner, java.util.Stack
 
-Each folder should have the name of the team and inside a readme file with team member details, (name, year, branch) and their theme. The readme file should also contain the link to their presentation as well as the drive link where both the report documents would be stored. 
+### Future project perspective: 
+> * to build this project further into an efficient application
+> * to make travelling easier
+> * to add more personalized functionalities for users
+> * to make it capable of making transactions for trips as well
 
-Happy Coding :)
+### Link to presentation: https://drive.google.com/drive/folders/1J2VJeqtVNZOXcCsObQsrcjXxTO1yEu2G?usp=share_link
+### Link to document reports: https://drive.google.com/drive/folders/1F9qCnvsGY95UtREbKYy4ubK_oPwCUC__
+
+## Team : CodingOutOfBounds
+### Team leader : Shruti Koshti
+### Team members: 
+> * @Shruti-78
+> * @Bhakti32003
+> * @SmakshiA
