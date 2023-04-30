@@ -14,3 +14,12 @@ While submitting, note that:
 Each folder should have the name of the team and inside a readme file with team member details, (name, year, branch) and their theme. The readme file should also contain the link to their presentation as well as the drive link where both the report documents would be stored. 
 
 Happy Coding :)
+Team number- 27
+Team Name- Team Hackslash
+Theme- Hospital Management System
+Team Members: 1) Vaishnavi Repe, SY Comp
+              2) Sakshi Shide, SY Comp
+              3) Srushti Jadhav, SY Comp
+              4) Taniya Nasir, SY Comp
+              
+Drive Link: https://drive.google.com/drive/folders/1MMrEHNgwA5_e60oWUdRfZhUPOmARjctq?usp=share_link              
