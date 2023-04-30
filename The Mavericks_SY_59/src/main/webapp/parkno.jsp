@@ -12,8 +12,8 @@
 	<div class="login-form">
 		<h1>Vozilo Park</h1>
 		<form action="ExitServlet">
-			<p>Vehicle Number</p>
-			<input type = "text" name="exitvehicle" placeholder="Vehicle Number">
+			<p>Parking Number</p>
+			<input type = "text" name="exitvehicle" placeholder="Parking Number">
 			<button type="submit">Submit</button>
 		</form>
 	</div>
