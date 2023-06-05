@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="5.0">
+  <servlet>
+    <description></description>
+    <display-name>ParkServlet</display-name>
+    <servlet-name>ParkServlet</servlet-name>
+    <servlet-class>com.buffer.ParkServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParkServlet</servlet-name>
+    <url-pattern>/ParkServlet</url-pattern>
+  </servlet-mapping>
+  <display-name>ParkingSystem</display-name>
+  
+  <servlet>
+  <description></description>
+   <display-name>VehicleServlet</display-name>
+    <servlet-name>VehicleServlet</servlet-name>
+    <servlet-class>com.buffer.VehicleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VehicleServlet</servlet-name>
+    <url-pattern>/VehicleServlet</url-pattern>
+  </servlet-mapping>
+  <display-name>VehicleServlet</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ParkingServlet</servlet-name>
+    <servlet-class>com.buffer.ParkingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParkingServlet</servlet-name>
+    <url-pattern>/ParkingServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ExitServlet</servlet-name>
+    <servlet-class>com.buffer.ExitServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExitServlet</servlet-name>
+    <url-pattern>/ExitServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ParkingSystem</display-name>
+    <servlet-name>ParkingSystem</servlet-name>
+    <servlet-class>com.buffer.ParkingServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParkingSystem</servlet-name>
+    <url-pattern>/ParkingSystem</url-pattern>
+  </servlet-mapping>
+  <display-name>ParkingSystem</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>Level1Servlet</servlet-name>
+    <servlet-class>com.buffer.Level1Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Level1Servlet</servlet-name>
+    <url-pattern>/Level1Servlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Level2Servlet</servlet-name>
+    <servlet-class>com.buffer.Level2Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Level2Servlet</servlet-name>
+    <url-pattern>/Level2Servlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>Level3Servlet</servlet-name>
+    <servlet-class>com.buffer.Level3Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Level3Servlet</servlet-name>
+    <url-pattern>/Level3Servlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>MainServlet</servlet-name>
+    <servlet-class>com.buffer.MainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MainServlet</servlet-name>
+    <url-pattern>/MainServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

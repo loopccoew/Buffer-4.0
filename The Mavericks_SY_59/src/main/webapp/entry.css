@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+*{
+	margin : 0px;
+	box-sizing : border-box;
+}
+
+body{
+	height : 100vh;
+	display : flex;
+	flex-direction: column;
+}
+
+header{
+	background : #1D1D1D;
+	padding : 20px;
+}
+
+h1{
+	font-size : 30px;
+	color : #2272FF;
+}
+
+h2{
+	float:right; 
+	color : #2272FF;
+}
+
+#parking {
+    height: 100%;
+    padding : 5%;
+}
+
+#parking-one{
+	height : 25%;
+}
+
+#mid-space{
+	height : 15%;
+}
+
+#parking-two{
+	height : 25%;
+}
+
+#parking-three{
+	height : 25%;
+}
+
+.empty-parking-lot{
+	float : left;
+	height : 100%;
+	width : 15%;
+	border : double 2px white;
+}
+
+.parking-lot{
+	background : #2272FF;
+	float : left;
+	height : 100%;
+	width : 15%;
+	border : double 2px black;
+}
+
+#bottom-space{
+	height : 15%;
+}
+
+button{
+	font-size : 18px;
+	font-weight : bold;
+	margin : 20px 0;
+	padding : 10px 15px;
+	width : 25%;
+	border-radius : 5px;
+	float: right;
+    background: blue;
+}
+
+footer{
+	background : #1D1D1D;
+	margin-top : auto;
+	color : #2272FF;
+	font-size : 10px;
+	padding : 10px 20px;
+}
